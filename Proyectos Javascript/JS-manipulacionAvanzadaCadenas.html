@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function imprimirMitad(cadena)
+ {
+ document.write("Primera mitad de caracteres de la cadena:");
+ var f;
+ for(f=0;f<cadena.length/2;f++)
+ {
+ document.write(cadena.charAt(f));
+ }
+ document.write("<br>");
+ }
+ function ultimoCaracter(cadena)
+ {
+ document.write("Ultimo caracter:");
+ document.write(cadena.charAt(cadena.length-1));
+ document.write("<br>");
+ }
+ function formaInversa(cadena)
+ {
+ document.write("Forma inversa:");
+ for(f=cadena.length-1;f>=0;f--)
+ {
+ document.write(cadena.charAt(f));
+ }
+ document.write("<br>");
+ }
+ function separadoGuion(cadena)
+ {
+ document.write("Separado por guión:");
+ var f;
+ for(f=0;f<cadena.length;f++)
+ {
+ document.write(cadena.charAt(f)+"-");
+ }
+ document.write("<br>");
+ }
+ function cantidadVocales(cadena)
+ {
+ var f;
+ var nueva=cadena.toUpperCase();
+ var cant=0;
+ for(f=0;f<cadena.length;f++)
+ {
+ if (nueva.charAt(f)=='A' || nueva.charAt(f)=='E' ||
+ nueva.charAt(f)=='I' || nueva.charAt(f)=='O' ||
+ nueva.charAt(f)=='U')
+ {
+ cant++;
+ }
+ }
+ document.write("Cantidad de vocales:"+cant);
+ }
+ 
+
+// Programa Principal
+ var cadena;
+ cadena=prompt("Ingrese una cadena:","");
+ imprimirMitad(cadena);
+ ultimoCaracter(cadena);
+ formaInversa(cadena);
+ separadoGuion(cadena);
+ cantidadVocales(cadena); 
+
+
+
+ var cadena;
+ cadena=prompt("Ingrese una cadena:","");
+
+ function separadoGuion(cadena)
+ {
+ document.write("Separado por guión:");
+ var f;
+ for(f=0;f<cadena.length;f++)
+ {
+ document.write(cadena.charAt(f));
+ }
+}
+separadoGuion(cadena);
+    </script>
+</body>
+</html>

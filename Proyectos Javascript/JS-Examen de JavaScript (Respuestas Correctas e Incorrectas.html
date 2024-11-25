@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script languaje="JavaScript">
+        function verResultados() {
+            var correctas = 0;
+            var incorrectas = 0;
+            var s1 = document.form1.D1.options
+            [document.form1.D1.selectedIndex].text;
+            if (s1 == "Un lenguaje para extender las capacidades de HTML")
+                correctas++;
+            else
+                incorrectas++;
+            var s2 = document.form1.D2.options
+            [document.form1.D2.selectedIndex].text;
+            if (s2 == "Solo un editor de texto y un navegador.")
+                correctas++;
+            else
+                incorrectas++;
+            var s3 = document.form1.D3.options
+            [document.form1.D3.selectedIndex].text;
+            if (s3 == "Si")
+                correctas++;
+            else
+                incorrectas++;
+            var s4 = document.form1.D4.options
+            [document.form1.D4.selectedIndex].text;
+            if (s4 == "No")
+                correctas++;
+            else
+                incorrectas++;
+            document.form1.T1.value = correctas;
+            document.form1.T2.value = incorrectas;
+        }
+    </script>
+    <form name="form1">
+        <p>Qué es JavaScript?<select size="1" name="D1">
+                <option>Un lenguaje para extender las capacidades de
+                    HTML</option>
+                <option>Un lenguaje de bajo nivel</option>
+                <option>Un lenguaje para la administración de bases de
+                    datos</option>
+            </select></p>
+        <p>Que necesitamos para comenzar a programar en JavaScript?<select size="1" name="D2">
+                <option>Solo un editor de texto y un navegador.</option>
+                <option>Un servidor de Internet</option>
+                <option>Programar en Java</option>
+            </select></p>
+        <p>var es una palabra clave del lenguaje JavaScrip?:<select size="1" name="D3">
+                <option>Si</option>
+                <option>No</option>
+            </select></p>
+        <p>repeat es una palabra clave de JavaScript?<select size="1" name="D4">
+                <option>Si</option>
+                <option>No</option>
+            </select></p>
+        <p><input type="button" value="Ver resultados" name="B1" onClick="verResultados()"></p>
+        <p>Cantidad de correctas:<input type="text" name="T1" size="20"></p>
+        <p>Cantidad de incorrectas:<input type="text" name="T2" size="20"></p>
+    </form>
+</body>
+
+</html>

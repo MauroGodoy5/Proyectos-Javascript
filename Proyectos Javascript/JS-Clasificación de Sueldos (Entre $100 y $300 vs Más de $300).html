@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=1;
+        var sueldo;
+        var sueldomayor=0;
+        var sueldomenor=0;
+        while(x<=5){
+            sueldo=prompt("ingrese el sueldo: ");
+            sueldo=parseFloat(sueldo);
+            x=x+1;
+            if(sueldo>=100&&sueldo<=300)
+            {
+            sueldomenor++;
+            
+            }
+        else 
+            {
+            sueldomayor++;
+            
+            }
+        
+        }
+        
+        
+        
+        document.write("Los empleados que cobran entre 100 y 300 son: "+sueldomenor);
+        document.write("<br>");
+        document.write("los empleados que cobran mas de 300 son: "+sueldomayor);
+    </script>
+</body>
+</html>

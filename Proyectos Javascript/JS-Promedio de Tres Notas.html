@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nota1,nota2,nota3;
+        nota1=prompt("ingrese su primer nota: ");
+        nota2=prompt("ingrese su segunda nota: ");
+        nota3=prompt("ingrese su tercer nota: ");
+        var suma=parseInt(nota1)+parseInt(nota2)+parseInt(nota3);
+        var promedio=suma/3;
+        if(promedio>7){
+            document.write("ESTA PROMOCIONADO CON "+promedio);
+        }
+        else{
+            document.write("NO ESTA PROMOCIONADO,SU NOTA ES "+promedio);
+        }
+
+        var numero;
+        numero=prompt("ingrese un numero de 1 o 2 cifras: ");
+        if(numero>9){
+            document.write("INGRESASTE UN NUMERO DE DOS CIFRAS");
+        }
+        else{
+            document.write("ingresaste un numero de una cifra");
+        }
+    </script>
+</body>
+</html>

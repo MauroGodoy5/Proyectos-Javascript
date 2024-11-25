@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num;
+    num=prompt("ingrese que tabla de multiplicar desea generar: ");
+    num=parseInt(num);
+    var tabla;
+    document.write("tabla del "+num+"<br><br>")
+    var f;
+    for(f=1;f<=12;f++){
+        tabla=f*num;
+        document.write(f+"*"+num+"="+tabla+"<br>");
+    }
+    </script>
+</body>
+</html>

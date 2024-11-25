@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var negativos=0;
+    var positivos=0;
+    var multi15=0;
+    var pares=0;
+    var f;
+    for(f=1;f<=10;f++){
+        var numero;
+        numero=prompt("ingrese un numero: ");
+        numero=parseInt(numero);
+        if(numero>0){
+            positivos++;
+        }
+        if(numero<0){
+            negativos++;
+        }
+        if(numero%2==0){
+            pares++;
+        }
+        if(numero>0&&numero%15==0){
+            multi15++;
+        }
+    }
+    document.write("<br>"+"los numeros positivos son: "+positivos+"<br>"+"los numeros negativos son: "+negativos+"<br>"+"losnumeros multiplos de 15 son: "+multi15+"<br>"+"los numeros pares son en total "+pares+"<br>");
+
+    </script>
+</body>
+</html>

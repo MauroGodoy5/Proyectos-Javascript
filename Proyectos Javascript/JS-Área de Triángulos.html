@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cant;
+        cant=prompt("ingrese la cantidad de triangulos a procesar: ");
+        cant=parseInt(cant);
+        var f;
+        var base,altura;
+        var superficie12=0;
+        for(f=1;f<=cant;f++){
+            base=prompt("Ingrese valor de la base:","");
+            base=parseInt(base);
+            altura=prompt("Ingrese valor de la altura:","");
+            altura=parseInt(altura);
+            var superficie
+            superficie=(base*altura)/2;
+            if(superficie12>12){
+                superficie12++;
+            }
+            document.write("Base:"+base+" Altura:"+altura+"Superficie="+superficie);
+            document.write("<br>"); 
+
+        }
+        document.write("La cantidad de triángulos ingresados con unasuperficie mayor a 12 es "+superficie12);
+    </script>
+</body>
+</html>

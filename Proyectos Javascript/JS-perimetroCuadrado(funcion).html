@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function perimetro(lado1,lado2,lado3,lado4)
+    {
+        var suma=0;
+        suma=lado1+lado2+lado3+lado4;
+        return suma;
+    }
+    
+    
+        var valor1;
+        var valor2;
+        var valor3;
+        var valor4;
+
+        valor1=prompt("ingrese el valor de un lado: ");
+        valor1=parseInt(valor1);
+
+        valor2=prompt("ingrese el valor de un lado: ");
+        valor2=parseInt(valor2);
+
+        valor3=prompt("ingrese el valor de un lado: ");
+        valor3=parseInt(valor3);
+
+        valor4=prompt("ingrese el valor de un lado: ");
+        valor4=parseInt(valor4);
+        
+        var peri;
+    peri=perimetro(valor1,valor2,valor3,valor4);
+    document.write("el valor ingresado fue: "+valor1+","+valor2+","+valor3+","+valor4);
+    document.write("<br>"); 
+    document.write("el perimetro del cuadrado es: "+peri);
+    </script>
+</body>
+</html>

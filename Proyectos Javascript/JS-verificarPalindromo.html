@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cadena;
+cadena=prompt("Ingrese una palabra: ");
+
+var f;
+var palindrome=true;
+for(f=0;f<cadena.length/2;f++){
+    if(cadena.charAt(f)!=cadena.charAt(cadena.length-1 -f))
+    palindrome=false;
+}
+document.write("La palabra: "+cadena);
+ document.write("<br>");
+ if (palindrome)
+ document.write("Es palíndrome");
+ else
+ document.write("No es palíndrome");
+    </script>
+</body>
+</html>

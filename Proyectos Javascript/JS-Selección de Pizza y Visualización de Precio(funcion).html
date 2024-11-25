@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function precio(){
+            document.form1.T3.value = document.form1.D1.options
+[document.form1.D1.selectedIndex].value;
+        }
+    </script>
+
+
+
+
+    <form name="form1">
+        <p>SELECCIONE SU PIZZA</p>
+        <p><select size="1" name="D1" onChange="precio()">
+        <option value="$250">muzarella</option>
+        <option value="$450">especial</option>
+        <option value="$550">roquefort</option>
+        </select></p>
+        <p>PRECIO:<input type="text" name="T3" size="20"></p>
+    </form>
+</body>
+</html>

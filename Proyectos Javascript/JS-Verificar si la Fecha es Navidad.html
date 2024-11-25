@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var dia;
+        dia=prompt("ingrese el dia de hoy: ");
+        dia=parseInt(dia);
+        var mes;
+        mes=prompt("ingrese el mes de hoy: ");
+        mes=parseInt(mes);
+        var año;
+        año=prompt("ingrese el año de hoy: ");
+        año=parseInt(año);
+        if(dia>24 && dia<26 && mes==12){
+            document.write("HOY ES NAVIDAD");
+        }
+        else{
+            document.write("HOY NO ES NAVIDAD");
+        }
+    </script>
+</body>
+</html>

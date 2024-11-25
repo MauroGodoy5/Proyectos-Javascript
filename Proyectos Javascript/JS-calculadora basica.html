@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script languaje="JavaScript">
+        var operacion=0; //1=suma, 2=resta, 3=multiplicacion, 4=division
+        var memoria; //Almacenamos el primer valor ingresado;
+       
+        function presionNumero(boton)
+        { if (boton==form1.b0)
+ form1.T1.value=form1.T1.value+"0";
+ if (boton==form1.b1)
+ form1.T1.value=form1.T1.value+"1";
+ if (boton==form1.b2)
+ form1.T1.value=form1.T1.value+"2";
+ if (boton==form1.b3)
+ form1.T1.value=form1.T1.value+"3";
+ if (boton==form1.b4)
+ form1.T1.value=form1.T1.value+"4";
+ if (boton==form1.b5)
+ form1.T1.value=form1.T1.value+"5";
+ if (boton==form1.b6)
+ form1.T1.value=form1.T1.value+"6";
+ if (boton==form1.b7)
+ form1.T1.value=form1.T1.value+"7";
+ if (boton==form1.b8)
+ form1.T1.value=form1.T1.value+"8";
+ if (boton==form1.b9)
+ form1.T1.value=form1.T1.value+"9";
+ }
+
+ function presionOperacion(boton)
+ {
+ memoria=parseInt(form1.T1.value);
+ if (boton==form1.mas)
+ {
+ operacion=1;
+ }
+ if (boton==form1.menos)
+ {
+ operacion=2;
+ }
+ if (boton==form1.por)
+ {
+ operacion=3;
+ }
+ if (boton==form1.div)
+ {
+ operacion=4;
+ }
+ form1.T1.value="";
+ }
+ function calcular()
+ {
+ var valor=parseInt(form1.T1.value);
+ var resultado;
+ switch (operacion) {
+ case 1:resultado=memoria+valor;
+ break;
+ case 2:resultado=memoria-valor;
+ break;
+ case 3:resultado=memoria*valor;
+ break;
+ case 4:resultado=memoria/valor;
+ break;
+ }
+ form1.T1.value=resultado;
+ }
+ function borrarResultado()
+ {
+ operacion=0;
+ form1.T1.value="";
+ }
+</script>
+
+
+
+    <form name="form1">
+        <table border="1">
+        <tr>
+        <td width="100%" colspan="4"><input type="text" name="T1"
+       size="20">
+        </td>
+        </tr>
+        <tr>
+        <td width="25%"><input type="button" value=" 7 " name="b7"
+       onClick="presionNumero(this)"></td>
+        <td width="25%"><input type="button" value=" 8 " name="b8"
+       onClick="presionNumero(this)"></td>
+        <td width="25%"><input type="button" value=" 9 " name="b9"
+       onClick="presionNumero(this)"></td>
+        <td width="25%"><input type="button" value=" + " name="mas"
+       onClick="presionOperacion(this)"></td>
+        </tr>
+        <tr>
+        <td width="25%"><input type="button" value=" 4 " name="b4"
+       onClick="presionNumero(this)"></td>
+        <td width="25%"><input type="button" value=" 5 " name="b5"
+       onClick="presionNumero(this)"></td>
+        <td width="25%"><input type="button" value=" 6 " name="b6"
+       onClick="presionNumero(this)"></td>
+        <td width="25%"><input type="button" value=" - "
+       name="menos" onClick="presionOperacion(this)"></td>
+        </tr>
+        <tr>
+        <td width="25%"><input type="button" value=" 1 " name="b1"
+       onClick="presionNumero(this)"></td>
+        <td width="25%"><input type="button" value=" 2 " name="b2"
+       onClick="presionNumero(this)"></td>
+        <td width="25%"><input type="button" value=" 3 " name="b3"
+       onClick="presionNumero(this)"></td>
+        <td width="25%"><input type="button" value=" * " name="por"
+       onClick="presionOperacion(this)"></td>
+        </tr>
+        <tr>
+        <td width="25%"><input type="button" value=" 0 " name="b0"
+       onClick="presionNumero(this)"></td>
+        <td width="25%"><input type="button" value="Borrar"
+       name="borrar" onClick="borrarResultado()"></td>
+        <td width="25%"><input type="button" value=" = "
+       name="igual" onClick="calcular()"></td>
+        <td width="25%"><input type="button" value=" / " name="div"
+       onClick="presionOperacion(this)"></td>
+        </tr>
+        </table>
+       </form>  
+</body>
+</html>

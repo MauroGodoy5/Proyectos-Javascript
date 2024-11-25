@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var final;
+        function concatenar(){
+            var t1=(document.form1.text1.value);
+            var t2=(document.form1.text2.value);
+             final=t1+t2;
+             (document.form1.final.value)=final;
+             
+             
+        }
+    </script>
+ 
+ <FORM NAME="form1">
+     <INPUT TYPE="text" NAME="text1">
+     <INPUT TYPE="text" NAME="text2">
+     <INPUT TYPE="text" NAME="final">
+     <INPUT TYPE="button" ONCLICK="concatenar();" VALUE="mostrar">
+    </FORM> 
+ 
+</body>
+</html>

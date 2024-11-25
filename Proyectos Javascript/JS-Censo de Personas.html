@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var documento;
+        var edad;
+        var sexo;
+        var cantpersonas=0;
+        var cantvarones=0;
+        var cantmujeres=0;
+        var cantvaronesentre=0;
+        do{
+            documento=prompt("ingrese el numero de documento: ");
+            documento=parseInt(documento);
+            if(documento!=0){
+            edad=prompt("ingrese la edad: ");
+            edad=parseInt(edad);
+            sexo=prompt("ingrese el sexo(masculino/femenino): ");
+            cantpersonas++;
+            if(sexo=="masculino")
+            {
+                cantvarones++;
+            }
+            
+            if(edad>=16&&edad<=65)
+            {
+                cantvaronesentre++;
+            }
+            else{
+                cantmujeres++;
+            }
+            document.write("<br>"+"nro de documento:"+documento+"<br>"+" edad:"+edad+"<br>"+"sexo:"+sexo);
+            }
+        
+        }while(documento!=0)
+        document.write("<br>");
+        document.write("Datos estadísticos.");
+        document.write("<br>");
+        document.write("Cantidad de personas censadas:"+cantpersonas);
+        document.write("<br>");
+        document.write("Cantidad de varones:"+cantvarones);
+        document.write("<br>");
+        document.write("Cantidad de mujeres:"+cantmujeres);
+        document.write("<br>");
+        document.write("Cantidad de varones con edades entre 16 y 65:"+cantvaronesentre); 
+    </script>
+</body>
+</html>

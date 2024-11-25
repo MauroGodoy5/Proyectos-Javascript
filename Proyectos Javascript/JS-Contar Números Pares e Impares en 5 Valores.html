@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          var x=1;
+        var valor;
+        var valorpar=0;
+        var valorimpar=0;
+        while(x<=5){
+            valor=prompt("ingrese un valor: ");
+            valor=parseInt(valor);
+            if(valor%2==0){
+            
+            valorpar++;
+            }
+            else{
+            
+            valorimpar++;
+            }
+            x++;
+        }
+        
+        document.write("los valores pares son: "+valorpar);
+        document.write("<br>"); 
+        document.write("los valores impares son: "+valorimpar);
+    </script>
+</body>
+</html>

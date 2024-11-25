@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var valor;
+        var suma=0;
+        do{
+            
+            valor=prompt("ingrese un valor: ");
+            valor=parseInt(valor);
+            suma=suma+valor;
+            document.write("valor acumulado: "+suma+"</br>");
+            if(valor==0){
+                document.write(" es cero ");
+            }
+            else{
+                if(valor>0){
+                    document.write(" es mayor a 0 ");
+                }
+                else{
+                    document.write("es  menor a cero ");
+                }
+            }
+            
+            
+        }while(valor!=9999);
+    </script>
+</body>
+</html>

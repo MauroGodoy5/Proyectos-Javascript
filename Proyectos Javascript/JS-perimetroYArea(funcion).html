@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function resultado(){
+            var l1= (document.form1.L1.value);
+            var s=Math.pow(l1,2);
+    
+            var p=l1*4;
+    
+            document.write("el perimetro del cuadrado es: "+p);
+            document.write("<br>");
+            document.write("la superficie del cuadrado es: "+s);
+        }
+    </script>
+    
+    
+    
+        <form action="" name="form1">
+            <INPUT TYPE="text" NAME="L1" size="20">
+            <INPUT TYPE="button" ONCLICK="resultado()" VALUE="resultado">
+        </form> 
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var puntos;
+    puntos=prompt("ingrese la cantidad de puntos a procesar: ");
+    puntos=parseInt(puntos);
+    var f;
+    for(f=1;f<=puntos;f++)
+    {
+        var x,y;
+        var cuadrante1=0;
+        var cuadrante2=0;
+        var cuadrante3=0;
+        var cuadrante4=0;
+        x=prompt("ingrese el valor de x: ");
+        x=parseInt(x);
+        y=prompt("ingrese el valor de y: ");
+        y=parseInt(y);
+
+        if(x>0&&y>0){
+            document.write("CUADRANTE 1"+"<br>");
+            cuadrante1++;
+        }
+        else{
+            if(x<0&&y>0){
+            document.write("CUADRANTE 2"+"<br>");
+            cuadrante2++;
+            }
+            else
+            {
+                if(x<0 && y<0){
+                    document.write("CUADRANTE 3"+"<br>");
+                    cuadrante3++;
+                }
+                else{
+                    if(x>0 && y<0){
+                        document.write("CUADRANTE 4"+"<br>");
+                        cuadrante4++;
+                    }
+                    else{
+                        document.write("se encuentra sobre el eje"+"<br>");
+                    }
+                }
+            }
+        }
+
+    }
+    document.write("<br>"+"los puntos totales en el primer cuadrante son: "+cuadrante1+"<br>"+"en el cuadrante2 son: "+cuadrante2+"<br>"+"en el cuadrante3 son: "+cuadrante3+"<br>"+" en el cuadrante4 son:"+cuadrante4);
+    </script>
+</body>
+</html>

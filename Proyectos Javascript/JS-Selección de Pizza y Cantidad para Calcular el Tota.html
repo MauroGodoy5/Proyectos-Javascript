@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    
+    function calcular(){
+            var p = parseInt (document.form1.D1.options
+            [document.form1.D1.selectedIndex].value);
+            var c =parseInt(document.form1.C1.value);
+
+            document.form1.T1.value=p*c;
+        }
+    </script>
+
+    <form name="form1">
+        <p>SELECCIONE SU PIZZA</p>
+        <p><select size="1" name="D1">
+        <option value="250">muzarella</option>
+        <option value="450">especial</option>
+        <option value="550">roquefort</option>
+        </select></p>
+        <p>CANTIDAD</p>
+        <INPUT TYPE="text" NAME="C1">
+
+            <p><input type="button" value="Calcular" name="B1"onClick="calcular()"></p> 
+            <p>TOTAL:<input type="text" name="T1" size="20"></p>
+    </form>
+</body>
+</html>

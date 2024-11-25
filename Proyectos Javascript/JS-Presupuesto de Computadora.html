@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcular(){
+            var micro = parseInt (document.form1.H1.options
+            [document.form1.H1.selectedIndex].value);
+            var monitor = parseInt (document.form1.H2.options
+            [document.form1.H2.selectedIndex].value);
+            var disco = parseInt (document.form1.H3.options
+            [document.form1.H3.selectedIndex].value);
+
+            document.form1.T1.value=micro+monitor+disco;
+        }
+    </script>
+
+
+    <form name="form1">
+        <p>PROCESADOR</p>
+        <p><select size="1" name="H1">
+        <option value="250">AMD-$250</option>
+        <option value="450">RYZEN-$450</option>
+        <option value="550">INTEL-$550</option>
+        </select></p>
+
+        <p>MONITOR</p>
+        <p><select size="1" name="H2">
+        <option value="1000">LG-$1000</option>
+        <option value="2000">SAMSUNG-$2000</option>
+        <option value="5000">VIEWSONIC-$5000</option>
+        </select></p>
+
+        <p>DISCO DURO</p>
+        <p><select size="1" name="H3">
+        <option value="50">WESTERN DIGITAL-$50</option>
+        <option value="100">TOSHIBA-$100</option>
+        <option value="580">KINGSTON-$580</option>
+        </select></p>
+    
+        <p><input type="button" value="Calcular" name="B1"onClick="calcular()"></p> 
+        <p>Presupuesto:<input type="text" name="T1" size="20"></p>
+    </form>
+</body>
+</html>

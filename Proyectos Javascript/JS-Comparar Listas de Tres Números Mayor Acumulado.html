@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var x=1;
+        var num;
+        var suma1=0;
+        var suma2=0;
+        document.write("primera lista");
+        document.write("<br>");
+        while(x<=3){
+            num=prompt("ingrese un numero(primera lista): ");
+            num=parseInt(num);
+            suma1=suma1+num;
+            x++;
+            document.write(num);
+            document.write("-");
+        }
+        x=1; 
+        document.write("<br><br>"); 
+        document.write("Segunda lista"); 
+        document.write("<br>");
+        while(x<=3){
+            num=prompt("ingrese un numero(segunda lista): ");
+            num=parseInt(num);
+            suma2=suma2+num;
+            x++;
+            document.write(num);
+            document.write("-");
+        }
+        document.write("<br><br>"); 
+        if(suma1>suma2){
+            document.write("la lista 1 tiene un valor mayor acumulado");
+        }
+        else{
+            if(suma2>suma1){
+                document.write("la lista 2 tiene un valor mayor acumulado");
+            }
+            else{
+                document.write("Ambas listas tienen valores acumuladosiguales"); 
+            }
+        }
+    </script>
+</body>
+</html>

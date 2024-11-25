@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <SCRIPT LANGUAGE="JavaScript">
+        function mayor()
+        {
+        var x1=parseInt(document.form1.text1.value);
+        var x2=parseInt(document.form1.text2.value);
+        if(x1>x2){
+            alert("el mayor numero ingresado es: "+x1);
+        }
+        else{
+            alert("el mayor numero ingresado es: "+x2);
+        }
+        }
+       </SCRIPT>
+    
+       <FORM NAME="form1">
+        <INPUT TYPE="text" NAME="text1">
+        <INPUT TYPE="text" NAME="text2">
+        <INPUT TYPE="button" ONCLICK="mayor()" VALUE="mostrar">
+       </FORM> 
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cantpreguntas;
+        cantpreguntas=prompt("ingrese la cantidad de preguntas que se hicieron:"," ");
+        var preguntascorrectas;
+        preguntascorrectas=prompt("ingrese la cantidad de preguntas respondidas correctamente: ","");
+        var porc;
+        porc=(preguntascorrectas/cantpreguntas)*100;
+
+        if(porc>=90)
+        {
+            document.write("nivel superior");
+        }
+        else
+        {
+            if(porc>=75)
+            {
+                document.write("nivel medio");
+            }
+            else
+            {
+                if(porc>=50)
+                {
+                    document.write("regular");
+                }
+                else
+                {
+                    document.write("fuera de nivel");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

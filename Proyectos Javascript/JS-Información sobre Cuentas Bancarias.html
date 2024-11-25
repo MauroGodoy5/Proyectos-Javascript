@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nrocuenta;
+        var nombre;
+        var saldo;
+        var total=0;
+        do{
+            
+            nrocuenta=prompt("ingrese un numero de cuenta: ");
+            nrocuenta=parseInt(nrocuenta);
+            if (nrocuenta>0)
+        {
+            nombre=prompt("ingrese un nombre: ");
+            saldo=prompt("ingrese un saldo: ");
+            saldo=parseFloat(saldo);
+            if(saldo>0){
+                document.write(nombre+"tiene un saldo ACREEDOR de: "+saldo);
+                total=total+saldo;
+            }
+            else{
+                if(valor<0){
+                    document.write(nombre+" tiene un saldo DEUDOR de"+saldo);
+                }
+                else{
+                    document.write(nombre+" tiene un saldo NULO de"+saldo);
+                }
+            }
+        }
+            
+        document.write("<br>");
+        document.write("EL SALDO TOTAL DE LOS ACREEDORES ES: "+total);
+        }while(nrocuenta>0);
+    </script>
+</body>
+</html>

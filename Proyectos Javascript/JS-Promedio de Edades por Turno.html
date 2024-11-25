@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var f;
+        for(f=1;f<=3;f++){
+            var edad;
+            edad=prompt("ingrese la edad: ");
+            edad=parseInt(edad);
+            var prommañana;
+            var promtarde;
+            var promnoche;
+            var suma=0;
+            suma=suma+edad;
+            prommañana=(edad+suma)/50;
+            promtarde=(edad+suma)/60;
+            promnoche=(edad+suma)/110;
+            
+
+        }
+        if(prommañana>promtarde&&prommañana>promnoche){
+                document.write("el promedio mas alto de edad es el del turno mañana");
+            }
+            else{
+                if(promtarde>prommañana&&promtarde>promnoche){
+                    document.write("el promedio mas alto de edad es el del turno tarde");
+                }
+                else{
+                    document.write("el promedio mas alto de edad es el del turno noche");
+                }
+            }
+        document.write("<br>"+"promedio de edad del turno mañana: % "+prommañana+"<br>"+"promedio de edad del turno tarde: % "+promtarde+"<br>"+"promedio de edad del turno noche: % "+promnoche+"<br>");
+    </script>
+</body>
+</html>

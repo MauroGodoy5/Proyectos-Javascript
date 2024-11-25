@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cargarvalores(valor)
+        {
+            var f;
+            for(f=0;f<valor.length;f++)
+            {
+                var num;
+                num=prompt("ingrese un numero: ");
+                valor[f]=parseInt(num);
+            }
+        }
+
+        function calcular(valor)
+        {
+            var acumulador=0;
+            var acu36=0;
+            var acu50=0;
+        }
+         var valor;
+        valor=new Array(8);
+        cargarvalores(valor);
+        calcular(valor);
+
+
+        function cargar(vec) 
+ { 
+ var f; 
+ for(f=0;f<vec.length;f++) 
+ { 
+ vec[f]=prompt("Ingrese valor:",""); 
+ vec[f]=parseInt(vec[f]); 
+ } 
+ } 
+ function sumarVectores(vector1,vector2,vecSuma) 
+ { 
+ var f; 
+ for(f=0;f<vector1.length;f++) 
+ { 
+ vecSuma[f]=vector1[f]+vector2[f]; 
+ } 
+ } 
+ function imprimir(vec) 
+ { 
+ var f; 
+ for(f=0;f<vec.length;f++) 
+ { 
+ document.write(vec[f]+" "); 
+ } 
+ document.write("<br>"); 
+ } 
+ 
+ var vector1; 
+ vector1=new Array(3); 
+ var vector2; 
+ vector2=new Array(3); 
+ cargar(vector1); 
+ cargar(vector2); 
+ var vecSuma; 
+ vecSuma=new Array(3); 
+ sumarVectores(vector1,vector2,vecSuma); 
+ document.write("Primer vector:<br>"); 
+ imprimir(vector1); 
+ document.write("Segundo vector:<br>"); 
+ imprimir(vector2); 
+ document.write("Vector resultante:<br>"); 
+ imprimir(vecSuma);
+    </script>
+</body>
+</html>

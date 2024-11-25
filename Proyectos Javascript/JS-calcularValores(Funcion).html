@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cargarvalores(valor)
+        {
+            var f;
+            for(f=0;f<valor.length;f++)
+            {
+                var num;
+                num=prompt("ingrese un numero: ");
+                valor[f]=parseInt(num);
+            }
+        }
+
+        function calcular(valor)
+        {
+            var acumulador=0;
+            var acu36=0;
+            var acu50=0;
+            
+            
+            for(f=0;f<valor.length;f++)
+            {
+                acumulador=acumulador+valor[f];
+                if(valor[f]>36)
+                {
+                    acu36=acu36+valor[f];
+                }
+                if(valor[f]>50)
+                {
+                    acu50++;
+                    
+                }
+            }
+            document.write("valor acumulado: "+acumulador);
+            document.write("<br>"); 
+            
+            
+            
+                
+                
+            
+            document.write("valor acumulado mas de 36: "+acu36);
+            document.write("<br>"); 
+
+            
+            document.write("total mas de 50: "+acu50);
+        }
+    </script>
+</body>
+</html>
